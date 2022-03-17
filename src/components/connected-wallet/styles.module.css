@@ -1,0 +1,237 @@
+.component {}
+
+.connectBtn,
+.connectBtn:hover,
+.connectBtn:active,
+.connectBtn:focus {
+    background-color: var(--bg-color-2);
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    border-radius: 90px;
+    width: 150px;
+}
+
+.overlay {
+    width: 320px;
+}
+
+.overlay :global .ant-popover-inner-content {
+    background-color: #181b29;
+    border: 2px solid rgba(90, 138, 252, 0.4);
+    border-radius: 16px;
+}
+
+.overlay :global .ant-popover-arrow {
+    border-color: var(--bg-color-2) !important;
+}
+
+.notificationBtn {
+    cursor: pointer;
+    color: var(--text-color-1);
+    margin-top: 8px;
+    margin-right: 12px;
+}
+
+.notificationHeader {
+    padding: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color-3);
+}
+
+.notificationBody {
+    padding: 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color-1);
+}
+
+.notificationZero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 80px 0;
+}
+
+.notificationZero svg {
+    width: 139px;
+    height: 128px;
+}
+
+.notificationZero span {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--text-color-2);
+}
+
+.walletBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.divider {
+    width: 1px;
+    height: auto;
+    margin: 0 24px;
+    background-color: #e3e4e6;
+}
+
+.walletPreview {
+    cursor: pointer;
+    padding: 11px 18px;
+    background-color: var(--bg-color-2);
+    border-radius: 90px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+}
+
+.walletPreviewAvatar {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.walletPreviewHash {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #EEF769;
+}
+
+.walletPreviewHashOnBtn {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--text-color-1);
+}
+
+.walletPreviewArrow {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+
+.walletHeader {
+    padding: 20px;
+    align-items: center;
+}
+
+.walletAvatarCol {
+    color: #EEF769;
+}
+
+.walletAvatar {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.walletHash {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #4f6ae6;
+}
+
+.stats {
+    padding-left: 20px;
+    padding-right: 16px;
+}
+
+.statRow {
+    color: #7F7F94;
+}
+
+.statRow :global .ant-col:nth-child(2) {
+    flex-grow: 1;
+}
+
+.statRow+.statRow {
+    margin-top: 32px;
+}
+
+.statIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 18px;
+    color: var(--text-color-4);
+}
+
+.statName {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color-2);
+}
+
+.statValue {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color-1);
+}
+
+.statTag {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #107C70;
+}
+
+.disconnectBtnRow {
+    padding: 24px;
+    justify-content: center;
+}
+
+.disconnectBtn,
+.disconnectBtn:hover {
+    background: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #EC4746;
+    border: 1px solid #EC4746;
+    border-radius: 100px;
+    padding: 4px 28px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 767px) {
+    .walletPreview {
+        width: 100px;
+        padding: 7px 12px;
+    }
+
+    .walletPreviewHashOnBtn {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .connectBtn,
+    .connectBtn:hover,
+    .connectBtn:active,
+    .connectBtn:focus {
+        width: 120px;
+        height: 36px;
+        padding: 7px 12px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

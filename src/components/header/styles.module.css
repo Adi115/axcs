@@ -1,0 +1,100 @@
+.component {
+    background: var(--bg-color-1);
+    padding: 42px 60px 50px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    height: 136px;
+}
+
+.menu :global .ant-dropdown-menu-item a {
+    color: var(--text-color-1);
+}
+
+.menu :global .ant-dropdown-menu-item-active a {
+    color: var(--text-color-3);
+}
+
+.menu :global .ant-dropdown-menu-item {
+    background-color: var(--bg-color-2);
+}
+
+.component :global .ant-dropdown-trigger {
+    background: var(--bg-color-2);
+    border-radius: 0;
+}
+
+.logo {
+    position: relative;
+}
+
+.lpStaking {
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    display: none;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links svg {
+    margin-left: 12px;
+    display: none;
+}
+
+.linkBar {
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 25px;
+}
+
+.dropDown {
+    margin-left: 12px;
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .links svg {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .dropDown {
+        display: block;
+    }
+
+    .linkBar {
+        display: none;
+    }
+
+    .lpStaking {
+        font-size: 12px;
+        line-height: 15px;
+        position: absolute;
+        margin-left: 0px;
+        top: 40px;
+        left: 0;
+        color: var(--text-color-2);
+        display: block;
+    }
+
+    .component {
+        padding: 57px 18px;
+        padding-bottom: 30px;
+    }
+
+    .links svg {
+        display: flex;
+    }
+}

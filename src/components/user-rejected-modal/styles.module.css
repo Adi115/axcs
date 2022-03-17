@@ -1,0 +1,44 @@
+.component {
+    max-width: 315px;
+}
+
+.component :global .ant-modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 16px;
+}
+
+.headerLabel {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #EC4746;
+}
+
+.text {
+    margin-top: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color-16);
+}
+
+.btnWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dismissBtn, .dismissBtn:focus, .dismissBtn:hover {
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid #EC4746;
+    border-radius: 100px;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    color: #EC4746;
+    width: 100px;
+}

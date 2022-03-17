@@ -1,0 +1,68 @@
+.component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px 15px;
+    width: 230px;
+    cursor: pointer;
+    color: var(--text-color-1);
+}
+
+.component svg {
+    width: 24px;
+    height: 24px;
+}
+
+.component span {
+    margin-left: 12px;
+    width: max-content;
+}
+
+.selected {
+    background: #313131;
+    border-radius: 100px;
+}
+
+.checkWrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.checkWrapper svg {
+    display: none;
+}
+
+.selected .checkWrapper svg {
+    display: inline;
+}
+
+@media screen and (max-width: 767px) {
+    .component {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 6px 8px;
+        width: fit-content;
+        margin-bottom: 25px;
+    }
+
+    .component svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .component span {
+        margin-left: 10px;
+    }
+
+    .checkSvg {
+        margin-left: 10px;
+    }
+/* 
+    .component:first-child {
+        min-width: 180px;
+    } */
+}

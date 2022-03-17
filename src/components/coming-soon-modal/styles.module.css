@@ -1,0 +1,49 @@
+.component {}
+
+.component :global .ant-modal-content {
+    width: 420px;
+}
+
+.component :global .ant-modal-body {
+    padding: 15px 16px;
+}
+
+.headerLabel {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--text-color-3);
+}
+
+.text {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color-2);
+}
+
+.footer {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.backBtn, .backBtn:hover {
+    background: transparent;
+    border: 2px solid var(--text-color-3);
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    color: var(--text-color-3);
+}
+
+@media (max-width: 450px) {
+    .component :global .ant-modal-content {
+        width: 360px;
+    }
+}

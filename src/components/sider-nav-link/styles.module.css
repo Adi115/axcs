@@ -1,0 +1,69 @@
+.wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 24px 0;
+    padding: 0 12px 0 0;
+}
+
+.active .activeMark {
+    visibility: visible;
+}
+
+.active .btn svg {
+    color: var(--text-color-15);
+    border: 1px solid var(--text-color-15);
+    background-color: var(--text-color-15-20p);
+    border-radius: 4px;
+}
+
+.active .label {
+    color: var(--text-color-2);
+}
+
+.activeMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 48px;
+    background-color: var(--bg-color-3);
+    border-radius: 0 4px 4px 0;
+    visibility: hidden;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    margin: 0 0 0 12px;
+    padding: 9px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--text-color-15-20p) !important;
+    color: var(--text-color-3);
+}
+
+.btn svg {
+    color: var(--text-color-1);
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+}
+
+.label {
+    margin-left: 16px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text-color-2);
+}

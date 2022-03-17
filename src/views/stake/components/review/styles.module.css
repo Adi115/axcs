@@ -1,0 +1,184 @@
+.card {
+    width: 458px;
+    background: var(--bg-color-2);
+    border-radius: 50px;
+    padding: 36px 24px;
+    height: fit-content;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.title span {
+    margin-left: 18px;
+}
+
+.status {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(232, 232, 232, 0.8);
+}
+
+.value {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E8E8E8;
+}
+
+.max {
+    margin-right: 10px;
+    border: 1px solid rgba(232, 232, 232, 0.15);
+    border-radius: 20px;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.understand {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFB359;
+}
+
+.btnWrapper {
+    position: relative;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.btnWrapper .check {
+    position: absolute;
+    top: 25px;
+    right: 22px;
+}
+
+.btnWrapper button,
+.btnWrapper button:hover,
+.btnWrapper button:active,
+.btnWrapper button:focus {
+    width: 100%;
+    background: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--text-color-4);
+    border: 1px solid var(--text-color-4);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 30px;
+    cursor: pointer;
+}
+
+.btnWrapper :global .ant-btn[disabled] {
+    background: transparent;
+    color: rgba(232, 232, 232, 0.55);
+    border: 1px solid rgba(232, 232, 232, 0.55);
+    cursor: not-allowed;
+}
+
+.btnWrapper :global .ant-btn-loading,
+.btnWrapper :global ::before {
+    background: transparent !important;
+    color: rgba(232, 232, 232, 0.55);
+    border: 1px solid rgba(232, 232, 232, 0.55);
+    cursor: not-allowed;
+}
+
+/* .btnWrapper :global .ant-btn-loading-icon {
+    position: absolute;
+    right: 15px;
+} */
+
+.firstBtn {
+    margin-top: 35px;
+}
+
+.arrowWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.understand {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFB359;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.understand svg {
+    margin-right: 10px;
+}
+
+.understand a {
+    text-decoration: underline;
+    color: #FFB359;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: 100%;
+        border-radius: 30px;
+        background: #000000;
+    }
+
+    .status {
+        font-size: 15px;
+    }
+    
+    .value {
+        font-size: 15px;
+    }
+
+    .btnWrapper button,
+    .btnWrapper button:hover,
+    .btnWrapper button:active,
+    .btnWrapper button:focus {
+        font-size: 13px;
+        padding: 25px 25px;
+    }
+
+    .understand {
+        font-size: 13px;
+    }
+}

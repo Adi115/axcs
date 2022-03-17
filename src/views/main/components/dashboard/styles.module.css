@@ -1,0 +1,299 @@
+.dashboard {
+    position: relative;
+}
+
+.outerCard {
+    width: 458px;
+    background: #272727;
+    border-radius: 50px;
+    height: fit-content;
+    padding-bottom: 36px;
+    margin-bottom: 30px;
+}
+
+.card {
+    width: 458px;
+    background: var(--bg-color-2);
+    border-radius: 50px;
+    padding: 36px 24px;
+    height: fit-content;
+}
+
+.status {
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(232, 232, 232, 0.8);
+}
+
+.value {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E8E8E8;
+}
+
+.max {
+    margin-right: 10px;
+    border: 1px solid rgba(232, 232, 232, 0.15);
+    border-radius: 20px;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.btnWrapper button,
+.btnWrapper button:hover,
+.btnWrapper button:active,
+.btnWrapper button:focus {
+    width: 100%;
+    background: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--text-color-4);
+    border: 1px solid var(--text-color-4);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btnWrapper button:hover {
+    width: 100%;
+    background: var(--text-color-4);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px solid var(--text-color-4);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btnWrapper :global .ant-btn[disabled] {
+    background: transparent;
+    color: rgba(232, 232, 232, 0.55);
+    border: 1px solid rgba(232, 232, 232, 0.55);
+    cursor: not-allowed;
+}
+
+.progressbar {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progressbar svg {
+    margin-left: 10px;
+}
+
+.progressbar :global .ant-progress-inner {
+    background-color: rgba(232, 232, 232, 0.2);
+    height: 3px;
+}
+
+.progressbar :global .ant-progress-bg {
+    background-color: #FFB359;
+    height: 3px !important;
+}
+
+.progressbarCompleted :global .ant-progress-bg {
+    background-color: #72F4A1;
+}
+
+.lockStatus {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #E8E8E8;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.lockStatus:first-child {
+    margin-top: 35px;
+}
+
+.haveInfo {
+    display: flex;
+    align-items: center;
+}
+
+.haveInfo svg {
+    margin-left: 10px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.infoModalWrapper {
+    width: 478px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: calc(38% - 10px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoModal {
+    width: 458px;
+    padding: 39px;
+    background: #292929;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modalTitle {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    color: #E8E8E8;
+}
+
+.modalDescription {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: rgba(232, 232, 232, 0.8);
+    margin-top: 24px;
+}
+
+.closeBtn {
+    width: 50px;
+    height: 50px;
+    background: #323232;
+    border-radius: 26px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.warning {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #FFB359;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.warning svg {
+    margin-right: 10px;
+    width: 18px;
+    color: #FFB359;
+    min-width: 18px;
+}
+
+@media screen and (max-width: 1199px) {
+    .infoModalWrapper {
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .outerCard {
+        width: 92%;
+        border-radius: 30px;
+        /* background: #000000; */
+        padding-bottom: 20px;
+        margin-bottom: 15px;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 30px;
+    }
+    .card {
+        width: 100%;
+        border-radius: 30px;
+        /* background: #000000; */
+        padding: 20px 15px;
+    }
+    .infoModalWrapper {
+        left: 0;
+        width: 100%;
+    }
+
+    .infoModal {
+        left: 0;
+        width: 100%;
+    }
+
+    .btnWrapper button,
+    .btnWrapper button:hover,
+    .btnWrapper button:active,
+    .btnWrapper button:focus {
+        font-size: 13px;
+        padding: 25px 25px;
+    }
+
+    .status {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .value {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .lockStatus {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .progressbar {
+        margin-bottom: 25px;
+    }
+}

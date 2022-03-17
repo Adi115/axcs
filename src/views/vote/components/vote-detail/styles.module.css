@@ -1,0 +1,538 @@
+.card {
+    width: 458px;
+    background: var(--bg-color-2);
+    border-radius: 50px;
+    padding: 48px 24px;
+    height: fit-content;
+    margin-bottom: 36px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    margin-bottom: 30px;
+    color: #E8E8E8;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.title span {
+    margin-left: 18px;
+}
+
+.description {
+    font-size: 24px;
+    line-height: 150%;
+    align-self: stretch;
+    color: #E8E8E8;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.voteId {
+    font-size: 15px;
+    line-height: 18px;
+    color: #E8E8E8;
+    opacity: 0.8;
+    margin-right: 12px;
+}
+
+.endTime {
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(232, 232, 232, 0.55);
+}
+
+.endTimeActive {
+    font-size: 15px;
+    line-height: 18px;
+    color: #72F4A1;
+}
+
+.endTimeActive1 {
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFB359;
+}
+
+.voteState {
+    width: 88px;
+    height: 30px;
+    background: transparent;
+    border-radius: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.voteStateActive {
+    background: #72F4A1;
+    color: #000000;
+}
+
+.voteStateActive1 {
+    background: #FFB359;
+    color: #000000;
+}
+
+.voteStateDefeated {
+    background: rgba(255, 179, 89, 0.3);
+    color: #FFB359;
+}
+
+.voteStateExecuted {
+    background: rgba(114, 244, 161, 0.3);;
+    color: #72F4A1;
+}
+
+.innerCard {
+    background: rgba(232, 232, 232, 0.08);
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.votingDataWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.votingDataWrapper:first-child {
+    margin-bottom: 30px;
+}
+
+.votingData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.forPercentAndPower {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    right: -7px;
+}
+
+.againstPower {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: -7px;
+}
+
+.forPercentWrapper {
+    display: flex;
+    align-items: center;
+    padding: 5px 9px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.forPercentWrapper:hover {
+    background: rgba(232, 232, 232, 0.15);
+}
+
+.for {
+    font-size: 18px;
+    color: #E8E8E8;
+}
+
+.forSmall {
+    font-size: 15px;
+}
+
+.dotSvg {
+    margin-right: 6px;
+}
+
+.forPercent {
+    margin-right: 4px;
+}
+
+.votingPower {
+    margin-right: 12px;
+}
+
+.details {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #E8E8E8;
+    margin-top: 48px;
+    margin-bottom: 18px;
+    max-width: 323px;
+}
+
+.executeAction {
+    margin-bottom: 18px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.executeAction:last-child {
+    margin-bottom: 0;
+}
+
+.contractName {
+    color: #FF8B8B;
+    text-decoration: underline;
+}
+
+.functionName {
+    word-wrap: break-word;
+}
+
+.summary {
+    margin-top: 48px;
+}
+
+.summary div:first-child {
+    font-size: 18px;
+    color: #E8E8E8;
+    margin-bottom: 18px;
+}
+
+.summary span:nth-child(2) {
+    font-size: 15px;
+    color: rgba(232, 232, 232, 0.8);
+}
+
+.progressbar {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progressbar :global .ant-progress-inner {
+    background-color: rgba(232, 232, 232, 0.2);
+    height: 6px;
+}
+
+.progressbar :global .ant-progress-bg {
+    background-color: #FFB359;
+    height: 6px !important;
+}
+
+.progressbarCompleted :global .ant-progress-bg {
+    background-color: #72F4A1 !important;
+}
+
+.proposer {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 42px;
+}
+
+.proposerAddress {
+    margin-top: 18px;
+    font-family: Libre Franklin;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgba(232, 232, 232, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proposerAddress :global svg {
+    cursor: pointer;
+}
+
+.history, .vote {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 42px;
+}
+
+.proposalCreated, .proposalActive {
+    margin-top: 10px;
+    font-family: Libre Franklin;
+    font-size: 15px;
+    font-weight: normal;
+    color: rgba(232, 232, 232, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.proposalCreated svg {
+    cursor: pointer;
+}
+
+.votingPan {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.votingCircle {
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+.votingCircleDisable {
+    cursor: not-allowed;
+    margin-right: 18px;
+}
+
+.circleWrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.circleHover {
+    display: none;
+}
+
+.circleWrapper:hover .circleHover {
+    display: block;
+}
+
+.circleWrapper:hover .circleNormal {
+    display: none;
+}
+
+.btnWrapper button,
+.btnWrapper button:hover,
+.btnWrapper button:active,
+.btnWrapper button:focus {
+    width: 100%;
+    background: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--text-color-4);
+    border: 1px solid var(--text-color-4);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 30px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.btnWrapper button:hover {
+    width: 100%;
+    background: #FF8B8B;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px solid #FF8B8B;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 30px;
+    cursor: pointer;
+}
+
+.btnWrapper :global .ant-btn[disabled] {
+    background: transparent;
+    color: rgba(232, 232, 232, 0.55);;
+    border: 1px solid rgba(232, 232, 232, 0.55);;
+    cursor: not-allowed;
+}
+
+.markDown {
+    margin-top: 48px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 180%;
+    color: rgba(232, 232, 232, 0.55) !important;
+    width: 100%;
+}
+
+.markDown :global img {
+    max-width: 100%;
+}
+
+.markDown :global a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.card :global h1,
+.card :global h3,
+.card :global h4,
+.card :global h5,
+.card :global h6 {
+    font-size: 15px;
+    line-height: 150%;
+    color: rgba(232, 232, 232, 0.8);
+}
+
+.card :global h2 {
+    font-size: 18px;
+    color: #E8E8E8;
+}
+
+.infoModalWrapper {
+    width: 478px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: calc(38% - 10px);
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoModal {
+    width: 458px;
+    padding: 39px 39px 25px 39px;
+    background: #292929;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalTitle {
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    color: #E8E8E8;
+}
+
+.modalDescription {
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: rgba(232, 232, 232, 0.8);
+    margin-top: 24px;
+}
+
+.closeBtn {
+    width: 50px;
+    height: 50px;
+    background: #323232;
+    border-radius: 26px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrowDownWrapper {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrowDownWrapper:hover {
+    background: rgba(232, 232, 232, 0.15);
+}
+
+.modalVotingData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modalVotingData .forSmall {
+    font-size: 18px;
+}
+
+.modalVotingData .votingPower {
+    font-size: 18px;
+}
+
+.addressesVotes {
+    margin-top: 42px;
+    color: rgba(232, 232, 232, 0.8);
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.voteAddress {
+    margin-top: 24px;
+    color: #E8E8E8;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.voteModalInner {
+    margin-top: 42px;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.voteModalInner::-webkit-scrollbar { 
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .infoModalWrapper {
+        left: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: 100%;
+        border-radius: 30px;
+        background: #000000;
+    }
+
+    .infoModalWrapper {
+        left: 0;
+        width: 100%;
+    }
+    .infoModal {
+        left: 0;
+        width: 100%;
+    }
+}

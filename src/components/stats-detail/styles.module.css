@@ -1,0 +1,45 @@
+.component {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-color-1);
+}
+
+.value {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-weight: normal;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+    color: var(--text-color-2);
+}
+
+.greenValue {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: #72F4A1;
+    margin-bottom: 9px;
+}
+
+@media screen and (max-width: 767px) {
+    .component {
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--text-color-1);
+        width: 100%;
+    }
+
+    .name {
+        font-size: 15px;
+        line-height: 18px;
+        color: var(--text-color-2);
+    }
+}

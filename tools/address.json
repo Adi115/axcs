@@ -1,0 +1,34 @@
+{
+    "CONTRACT_BUSD": {
+        "mainnet": "",
+        "kovan": "0x7888459C5854B911cDACf010E3f44E3e128A2f8f"
+    },
+    "CONTRACT_DEXF_BNB_LP": {
+        "mainnet": "",
+        "kovan": "0x2081B0D6B7dE39B9630d264f6402538EBD2f9c18"
+    },
+    "CONTRACT_DEXF": {
+        "mainnet": "",
+        "kovan": "0x1C168B81AF4C2e6d97Ad7E4a61Ab1b8361DBb36b"
+    },
+    "CONTRACT_ETH": {
+        "mainnet": "",
+        "kovan": "0xBcB9Aa81114A437E52C617BE5b8d9b68a030897F"
+    },
+    "CONTRACT_GOVERNOR": {
+        "mainnet": "",
+        "kovan": "0xb9F0c230d8D875BB3d3B61120Fd10516F2735724"
+    },
+    "CONTRACT_LP_FARMING": {
+        "mainnet": "",
+        "kovan": "0x115b9147b3cDf2d8F483E879915679FE9EE4f1a0"
+    },
+    "CONTRACT_UNISWAP_V2": {
+        "mainnet": "",
+        "kovan": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"
+    },
+    "CONTRACT_WBTC": {
+        "mainnet": "",
+        "kovan": "0xBcB9Aa81114A437E52C617BE5b8d9b68a030897F"
+    }
+}

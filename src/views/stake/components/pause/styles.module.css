@@ -1,0 +1,94 @@
+.card {
+    width: 566px;
+    background: #313131;
+    border-radius: 50px;
+    border: 6px solid #FFB359;
+    padding: 36px 24px;
+    height: fit-content;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-family: Inconsolata;
+    font-style: normal;
+    font-weight: bold;  
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.btnWrapper {
+    position: relative;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.btnWrapper .check {
+    position: absolute;
+    top: 25px;
+    right: 22px;
+}
+
+.btnWrapper button,
+.btnWrapper button:hover,
+.btnWrapper button:active,
+.btnWrapper button:focus {
+    width: 100%;
+    background: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--text-color-4);
+    border: 1px solid var(--text-color-4);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 30px;
+    cursor: pointer;
+}
+
+.btnWrapper :global .ant-btn[disabled] {
+    background: transparent;
+    color: rgba(232, 232, 232, 0.55);
+    border: 1px solid rgba(232, 232, 232, 0.55);
+    cursor: not-allowed;
+}
+
+.btnWrapper :global .ant-btn-loading,
+.btnWrapper :global ::before {
+    background: transparent !important;
+    color: rgba(232, 232, 232, 0.55);
+    border: 1px solid rgba(232, 232, 232, 0.55);
+    cursor: not-allowed;
+}
+
+.terms {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: 100%;
+        border: none;
+        border-radius: 30px;
+        background: #000000;
+    }
+    
+    .terms {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+    .btnWrapper button,
+    .btnWrapper button:hover,
+    .btnWrapper button:active,
+    .btnWrapper button:focus {
+        font-size: 13px;
+        padding: 25px 25px;
+    }
+}

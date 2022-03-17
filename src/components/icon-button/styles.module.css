@@ -1,0 +1,52 @@
+.component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px 43px;
+    width: 280px;
+    height: 54px;
+    cursor: pointer;
+    color: var(--text-color-1);
+}
+
+/* .component svg {
+    width: 24px;
+    height: 24px;
+} */
+
+.component span {
+    margin-left: 21px;
+    width: max-content;
+}
+
+.selected {
+    border-left: 6px solid var(--text-color-5);
+    font-weight: bold;
+    color: var(--text-color-5);
+    padding-left: 37px;
+}
+
+.small .component {
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 21px;
+    width: fit-content;
+}
+
+.small .component span {
+    margin-left: 9px;
+}
+
+.small .selected {
+    border-left: none;
+    border-bottom: 3px solid var(--text-color-5);
+    font-weight: bold;
+    color: var(--text-color-5);
+    padding-bottom: 18px;
+}

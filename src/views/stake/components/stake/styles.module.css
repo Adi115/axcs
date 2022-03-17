@@ -1,0 +1,280 @@
+.card {
+    width: 458px;
+    background: var(--bg-color-2);
+    border-radius: 50px;
+    padding: 36px 24px;
+    height: fit-content;
+}
+
+.deposit {
+    border: 1px solid var(--border-color-1);
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 38px;
+}
+
+.depositTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text-color-2);
+}
+
+.depositBottom {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tokenName {
+    width: max-content;
+}
+
+.token {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.maxBtn {
+    font-size: 13px;
+    line-height: 16px;
+    border: 1px solid var(--border-color-1);
+    border-radius: 20px;
+    padding: 2px 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.maxBtnUnstake {
+    margin-right: 0;
+}
+
+.selectedToken {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selectedToken svg {
+    width: 24px;
+}
+
+.selectedToken span {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.arrowWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.estimated {
+    border: 1px solid var(--border-color-1);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.estimatedTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--text-color-2);
+}
+
+.estimatedBottom {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: var(--text-color-2);
+    margin-top: 40px;
+}
+
+.info svg {
+    margin-right: 10px;
+    width: 24px;
+}
+
+.info span {
+    width: 357px;
+}
+
+.btnWrapper button,
+.btnWrapper button:hover,
+.btnWrapper button:active,
+.btnWrapper button:focus {
+    width: 100%;
+    background: transparent;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--text-color-4);
+    border: 1px solid var(--text-color-4);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 30px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.btnWrapper button:hover {
+    width: 100%;
+    background: #FF8B8B;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    border: 1px solid #FF8B8B;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 30px;
+    cursor: pointer;
+}
+
+.btnWrapper :global .ant-btn[disabled] {
+    background: transparent;
+    color: rgba(232, 232, 232, 0.55);;
+    border: 1px solid rgba(232, 232, 232, 0.55);;
+    cursor: not-allowed;
+}
+
+.stakeDescription1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--text-color-1);
+}
+
+.stakeDescription2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(232, 232, 232, 0.8);
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        width: 100%;
+        border-radius: 30px;
+        background: #000000;
+    }
+
+    .depositTop {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .depositBottom {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .maxBtn {
+        font-size: 11px;
+        line-height: 13px;
+        border-radius: 15px;
+        padding: 2px 8px;
+        height: 25px;
+    }
+
+    .selectedToken {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .selectedToken svg {
+        width: 18px;
+    }
+
+    .estimatedTop {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .info {
+        font-size: 15px;
+        line-height: 140%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .info svg {
+        width: 15px;
+    }
+
+    .arrowWrapper {
+        height: 50px;
+    }
+
+    .depositBtn {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .tokens {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: scroll;
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+
+    .stakeDescription1 {
+        font-size: 15px;
+    }
+
+    .stakeDescription2 {
+        font-size: 15px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+
+    .btnWrapper button,
+    .btnWrapper button:hover,
+    .btnWrapper button:active,
+    .btnWrapper button:focus {
+        font-size: 13px;
+        padding: 25px 25px;
+    }
+}

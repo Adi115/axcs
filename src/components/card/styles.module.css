@@ -1,0 +1,7 @@
+.component {
+    background: var(--bg-color-2);
+    border: 2px solid var(--bg-color-4);
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 18px 18px 18px 16px;
+}

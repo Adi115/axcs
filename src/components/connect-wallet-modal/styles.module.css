@@ -1,0 +1,76 @@
+/* .component {
+    background-color: var(--bg-color-2);
+} */
+
+.component {
+    color: var(--text-color-1);
+}
+
+.component :global .ant-modal-body {
+    padding: 16px;
+}
+
+.component :global .ant-modal-content {
+    min-width: 530px;
+    overflow: scroll;
+}
+
+.component :global .ant-modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+.headerLabel {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--text-color-3);
+}
+
+.headerNote {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color-2);
+}
+
+.connectorList {
+    margin-top: 16px;
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+}
+
+.connectorBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 114px;
+    background: var(--bg-color-2);
+    border: 1px solid var(--border-color-1);
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.connectorBtn:hover {
+    border: 1px solid var(--text-color-3);
+    background: var(--bg-color-2);
+    box-shadow: 0 16px 32px rgba(255, 67, 57, 0.04);
+}
+
+.connectorBtn:disabled {
+    background-color: var(--bg-color-6) !important;
+}
+
+.connectorLogo {
+    width: 32px;
+    height: 32px;
+}
+
+.connectorName {
+    margin-left: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--text-color-1);
+}

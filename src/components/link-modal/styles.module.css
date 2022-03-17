@@ -1,0 +1,71 @@
+.createLinkModal :global .ant-modal-body {
+  padding: 15px 16px 16px 16px;
+}
+
+.linkModalWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: var(--text-color-1);
+}
+
+.linkModalTitle {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--text-color-3);
+}
+
+.linkModaldescription {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text-color-16);
+  display: flex;
+  flex-direction: column;
+}
+
+.linkUrl {
+  margin-top: 16px;
+  background: var(--bg-color-2);
+  border: 2px solid var(--bg-color-4);
+  box-sizing: border-box;
+  border-radius: 16px;
+  width: 100%;
+  padding: 40px 16px 40px 16px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.copyBtnWrapper {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.copyBtn {
+  padding: 8px 25px;
+  background: transparent;
+  color: var(--text-color-3);
+  border: 1px solid var(--text-color-3);
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.copyBtn:active,
+.copyBtn:hover,
+.copyBtn:focus,
+.copyBtn:focus-visible {
+  color: white;
+  background-color: #3c44b1;
+  border: none;
+}

@@ -1,0 +1,28 @@
+.component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 80px;
+    padding: 16px 24px;
+    background-color: var(--bg-color-5);
+    border-radius: 16px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    color: var(--text-color-1);
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color-1);
+}

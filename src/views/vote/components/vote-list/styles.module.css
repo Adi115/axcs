@@ -1,0 +1,104 @@
+.card {
+    width: 458px;
+    background: var(--bg-color-2);
+    border-radius: 50px;
+    padding: 42px;
+    height: fit-content;
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+
+.activeStateBorder {
+    border: 1px solid #72F4A1;
+}
+
+.activeStateBorder1 {
+    border: 1px solid #FFB359;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 150%;
+    align-self: stretch;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.voteId {
+    font-size: 15px;
+    line-height: 18px;
+    color: #E8E8E8;
+    opacity: 0.8;
+    margin-right: 12px;
+}
+
+.endTime {
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(232, 232, 232, 0.55);
+}
+
+.endTimeActive {
+    font-size: 15px;
+    line-height: 18px;
+    color: #72F4A1;
+}
+
+.endTimeActive1 {
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFB359;
+}
+
+.voteState {
+    width: 88px;
+    height: 30px;
+    background: transparent;
+    border-radius: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.voteStateActive {
+    background: #72F4A1;
+    color: #000000;
+}
+
+.voteStateActive1 {
+    background: #FFB359;
+    color: #000000;
+}
+
+.voteStateDefeated {
+    background: rgba(255, 179, 89, 0.3);
+    color: #FFB359;
+}
+
+.voteStateExecuted {
+    background: rgba(114, 244, 161, 0.3);;
+    color: #72F4A1;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+        border-radius: 30px;
+        background: rgba(232, 232, 232, 0.08);
+        margin-bottom: 20px;
+    }
+
+    .card:first-child {
+        margin-top: 20px;
+    }
+}

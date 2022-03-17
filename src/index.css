@@ -1,0 +1,287 @@
+@font-face {
+    font-family: Libre Franklin;
+    src: url('resources/fonts/LibreFranklin-Regular.ttf');
+}
+
+@font-face {
+    font-family: Libre Franklin;
+    font-weight: 600;
+    src: url('resources/fonts/LibreFranklin-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Libre Franklin;
+    font-weight: 700;
+    src: url('resources/fonts/LibreFranklin-Bold.ttf');
+}
+
+@font-face {
+    font-family: Inconsolata;
+    src: url('resources/fonts/Inconsolata-Regular.ttf');
+}
+
+@font-face {
+    font-family: Inconsolata;
+    font-weight: 600;
+    src: url('resources/fonts/Inconsolata-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Inconsolata;
+    font-weight: 700;
+    src: url('resources/fonts/Inconsolata-Bold.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: Libre Franklin, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Libre Franklin';
+    color: var(--text-color-1);
+}
+
+* {
+    box-sizing: border-box;
+    /* transition: background-color 0.5s ease, color 0.5s ease; */
+}
+
+svg,
+svg * {
+    transition: none !important;
+}
+
+button {
+    font-family: Libre Franklin;
+}
+
+#root {
+    min-height: 100vh;
+}
+
+[text-elipsis] {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ant-modal-content {
+    background-color: var(--bg-color-1);
+    border-radius: 16px;
+    border: 1px solid var(--border-color-1);
+}
+
+.ant-modal-body {
+    border: none;
+}
+
+.ant-modal .ant-modal-footer:empty {
+    display: none;
+}
+
+.ant-modal .ant-modal-close {
+    color: var(--text-color-4);
+}
+
+.ant-modal-close-x {
+    color: var(--text-color-1);
+    font-size: 12px;
+}
+
+.ant-notification-notice {
+    word-break: break-word;
+}
+
+.ant-popover-inner-content {
+    padding: 0;
+}
+
+.ant-popover-inner {
+    background: transparent;
+}
+
+.ant-popover-arrow {
+    display: none;
+}
+
+.ant-dropdown-menu {
+    background-color: var(--bg-color-1);
+    padding: 0;
+}
+
+.ant-dropdown-menu-item {
+    padding: 8px;
+    color: var(--text-color-1);
+    font-size: 16px;
+    line-height: 20px;
+    min-width: 150px;
+}
+
+.ant-dropdown-menu-item:hover {
+    background-color: var(--bg-color-4);
+    color: var(--text-color-3);
+}
+
+.ant-dropdown-menu-item-selected {
+    background-color: var(--bg-color-4);
+    color: var(--text-color-3);
+}
+
+.ant-tabs-tab {
+    color: var(--text-color-1);
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--text-color-15);
+}
+
+.ant-tabs-ink-bar {
+    background-color: var(--text-color-15);
+}
+
+.ant-input,
+.ant-input:hover,
+.ant-input:active,
+.ant-input:focus {
+    background: var(--bg-color-1);
+    border: 2px solid var(--bg-color-4);
+    box-sizing: border-box;
+    border-radius: 16px;
+    color: var(--text-color-1);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.ant-input:focus,
+.ant-input-focused {
+    box-shadow: 0 0 0 2px var(--bg-color-4);
+}
+
+.ant-dropdown-trigger,
+.ant-dropdown-trigger:hover,
+.ant-dropdown-trigger:active,
+.ant-dropdown-trigger:focus {
+    background: #4260A6;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: var(--text-color-1);
+    border: none;
+    align-items: center;
+}
+
+.ant-switch {
+    background-color: var(--text-color-16);
+}
+
+.ant-switch-checked {
+    background-color: var(--text-color-3);
+}
+
+.ant-switch-handle::before {
+    background-color: #C2C6CD;
+}
+
+.ant-switch-checked .ant-switch-handle::before {
+    background-color: #FFFFFF;
+}
+
+.ant-switch-checked .ant-switch-handle:hover::before {
+    background-color: #4260A6;
+    opacity: 0.4;
+    border-radius: 100px;
+}
+
+.ant-tooltip-inner {
+    background-color: rgba(90, 138, 252, 0.4);
+    color: var(--text-color-1);
+}
+
+.ant-tooltip-arrow-content {
+    background-color: rgba(90, 138, 252, 0.4);
+}
+
+a {
+    color: var(--text-color-1);
+}
+
+a:hover {
+	color: var(--text-color-1);
+}
+
+::selection {
+    color: #fff;
+    background: var(--text-color-12);
+}
+
+:root {
+    --bg-color-1: #000000;
+    --bg-color-2: #161616;
+    --bg-color-3: #fff;
+    --bg-color-4: #344574;
+    --bg-color-5: rgba(79, 106, 230, 0.08);
+    --bg-color-6: rgba(147, 148, 150, 0.08);
+    --bg-color-7: #040B12;
+    --bg-color-8: #EC4746;
+
+    --text-color-1: #E8E8E8;
+    --text-color-2: rgba(232, 232, 232, 0.8);;
+    --text-color-3: #5A8AFC;
+    --text-color-4: #FF8B8B;
+    --text-color-5: #FF8B8B;
+    --text-color-6: #7288ea;
+    --text-color-7: #4f6ae5;
+    --text-color-8: #95a6ef;
+    --text-color-10: #fff;
+    --text-color-11: #1bc943;
+    --text-color-12: #f4772e;
+    --text-color-13: #29abb5;
+    --text-color-14: #39c399;
+    --text-color-15: #EEF769;
+    --text-color-15-20p: rgba(238, 247, 105, 0.2);
+    --text-color-16: #7F7F94;
+
+    --border-color-1: #535353;
+    --border-color-2: #ff4339;
+    --border-color-3: #60626887;
+    --border-color-4: #6062681f;
+
+    --shadow-color-1: rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.theme-dark {
+    --bg-color-1: #000000;
+    --bg-color-2: #313131;
+    --bg-color-3: #fff;
+    --bg-color-4: #344574;
+    --bg-color-5: rgba(79, 106, 230, 0.08);
+    --bg-color-6: rgba(147, 148, 150, 0.08);
+    --bg-color-7: #040B12;
+    --bg-color-8: #EC4746;
+
+    --text-color-1: #E8E8E8;
+    --text-color-2: #939496;
+    --text-color-3: #5A8AFC;
+    --text-color-4: #606268;
+    --text-color-5: #fff;
+    --text-color-6: #7288ea;
+    --text-color-7: #4f6ae5;
+    --text-color-8: #95a6ef;
+    --text-color-10: #fff;
+    --text-color-11: #1bc943;
+    --text-color-12: #f4772e;
+    --text-color-13: #29abb5;
+    --text-color-14: #39c399;
+    --text-color-15: #EEF769;
+    --text-color-15-20p: rgba(238, 247, 105, 0.2);
+    --text-color-16: #7F7F94;
+
+    --border-color-1: #44494d;
+    --border-color-2: #ff4339;
+    --border-color-3: #60626887;
+    --border-color-4: #6062681f;
+
+    --shadow-color-1: rgba(255, 255, 255, 0.4), 0 8px 16px rgba(0, 0, 0, 0.08);
+}
